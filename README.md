@@ -36,6 +36,83 @@ The app allows users to attempt quizzes, keeps track of time, and displays detai
 - **Database**: MongoDB (Atlas or local)
 - **Other**: Mongoose ODM, dotenv, CORS
 
+
+---
+
+## **Installation and Running Instructions**
+
+### **Prerequisites**
+
+- **Node.js** (v18+ recommended)  
+- **npm** (comes with Node.js)  
+- **MongoDB**:
+  - Either **local MongoDB Community Server** installed and running  
+  - Or **MongoDB Atlas** account (cloud database)  
+
+---
+INstallation:
+
+
+---
+
+## **Installation and Running Instructions**
+
+### **Prerequisites**
+
+- **Node.js** (v18+ recommended)  
+- **npm** (comes with Node.js)  
+- **MongoDB**:
+  - Either **local MongoDB Community Server** installed and running  
+  - Or **MongoDB Atlas** account (cloud database)  
+
+---
+
+### **Step 1: Clone the Repository**
+
+```bash
+git clone https://github.com/your-username/mcq-quiz-app-dimple.git
+cd mcq-quiz-app-dimple
+Step 2: Setup Backend
+
+Navigate to backend folder:
+
+cd backend
+
+
+Install dependencies:
+
+npm install
+
+
+Create a .env file in the backend folder with:
+
+MONGO_URI=your_mongodb_connection_string
+PORT=5000
+
+
+If using local MongoDB:
+
+MONGO_URI=mongodb://127.0.0.1:27017/quizdb
+
+
+If using MongoDB Atlas:
+
+MONGO_URI=mongodb+srv://<username>:<password>@cluster0.mongodb.net/quizdb
+
+
+Seed the database with sample questions:
+
+node seed.js
+
+
+Start the backend server:
+
+node server.js
+
+
+Server runs on: http://localhost:5000
+
+API endpoint for questions: http://localhost:5000/api/questions
 ---
 
 evidences: 
