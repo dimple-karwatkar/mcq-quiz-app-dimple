@@ -37,6 +37,14 @@ The app allows users to attempt quizzes, keeps track of time, and displays detai
 - **Other**: Mongoose ODM, dotenv, CORS
 
 
+evidences: 
+<img width="965" height="857" alt="image" src="https://github.com/user-attachments/assets/1d502748-983d-410c-9788-1132dcd161a6" />
+
+<img width="965" height="857" alt="image" src="https://github.com/user-attachments/assets/ff1a2ff0-af38-498e-a07e-d229b188fe7c" />
+
+<img width="797" height="865" alt="image" src="https://github.com/user-attachments/assets/70bd549d-88f4-4e0d-a04b-1a210361f942" />
+
+<img width="1901" height="1077" alt="image" src="https://github.com/user-attachments/assets/5c7b586e-1511-4a12-befc-0e394fcced3c" />
 ---
 
 ## **Installation and Running Instructions**
@@ -115,11 +123,3 @@ Server runs on: http://localhost:5000
 API endpoint for questions: http://localhost:5000/api/questions
 ---
 
-evidences: 
-<img width="965" height="857" alt="image" src="https://github.com/user-attachments/assets/1d502748-983d-410c-9788-1132dcd161a6" />
-
-<img width="965" height="857" alt="image" src="https://github.com/user-attachments/assets/ff1a2ff0-af38-498e-a07e-d229b188fe7c" />
-
-<img width="797" height="865" alt="image" src="https://github.com/user-attachments/assets/70bd549d-88f4-4e0d-a04b-1a210361f942" />
-
-<img width="1901" height="1077" alt="image" src="https://github.com/user-attachments/assets/5c7b586e-1511-4a12-befc-0e394fcced3c" />
