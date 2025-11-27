@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Add Question</title>
+</head>
+<body>
+  <h2>Add Question</h2>
+  <form id="qForm">
+    <label>Question:</label><br>
+    <input type="text" id="question"><br>
+
+    <label>Option 1:</label><br>
+    <input type="text" id="opt1"><br>
+    <label>Option 2:</label><br>
+    <input type="text" id="opt2"><br>
+    <label>Option 3:</label><br>
+    <input type="text" id="opt3"><br>
+    <label>Option 4:</label><br>
+    <input type="text" id="opt4"><br>
+
+    <label>Correct Answer:</label><br>
+    <input type="text" id="correct"><br>
+    <label>Explanation:</label><br>
+    <input type="text" id="explanation"><br><br>
+
+    <button type="submit">Add Question</button>
+  </form>
+
+  <script>
+    document.getElementById('qForm').addEventListener('submit', async (e) => {
+      e.preventDefault();
+      const data = {
+        question: document.getElementById('question').value,
+        options: [
+          document.getElementById('opt1').value,
+          document.getElementById('opt2').value,
+          document.getElementById('opt3').value,
+          document.getElementById('opt4').value
+        ],
+        correctAnswer: document.getElementById('correct').value,
+        explanation: document.getElementById('explanation').value
+      };
+
+      const res = await fetch('http://localhost:5000/api/questions', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(data)
+      });
+
+      const result = await res.json();
+      alert('Question Added: ' + result.question);
+    });
+  </script>
+</body>
+</html>
